@@ -81,7 +81,49 @@ body, html {
     
 }
 
+<--! Portofolio starts here -->
 
+
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+    vertical-align: center;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
 
 
 </style>
@@ -104,9 +146,48 @@ body, html {
 <div class="about">
     <p id="Categories_1"> About </p>
     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-</div>
 
+
+
+<!-- Header -->
+
+  <p id="Categories_1">Portofolio</p>
+
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="_DSC0054_BW.jpg" style="width:100%">
+    <img src="_DSC0610.jpg" style="width:100%">
+    <img src="nikos.jpg " style="width:100%">
+    <img src="kitharaBW.jpg" style="width:100%">
+    <img src="Nikos_1.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="Nikos_2.jpg" style="width:100%">
+    <img src="Nikos_3.jpg" style="width:100%">
+    <img src="Nikos_4.jpg" style="width:100%">
+    <img src="DSC_6257.jpg" style="width:100%">
+    <img src="DSC_6320.jpg" style="width:100%">
     
+  </div>  
+  <div class="column">
+    <img src="_DSC0415.jpg" style="width:100%">
+    <img src="_DSC0744.jpg" style="width:100%">
+    <img src="_DSC0751.jpg" style="width:100%">
+    <img src="_DSC0759.jpg" style="width:100%">
+    <img src="_DSC0785.jpg" style="width:100%">
+    
+  </div>
+  <div class="column">
+    <img src="Alice_2.jpg" style="width:100%">
+    <img src="analog_effect_Alice.jpg" style="width:100%">
+    <img src="Alice_1.jpg" style="width:100%">
+    <img src="Alice_1_BW.jpg" style="width:100%">
+  </div>
+</div>
+    
+</div>    
 
 </body>
 </html>
